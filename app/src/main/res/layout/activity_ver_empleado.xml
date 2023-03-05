@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7B9859"
+    tools:context=".verEmpleado">
+
+    <ImageButton
+        android:id="@+id/btEliminarEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btEditarEmpleado"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <Button
+        android:id="@+id/btEditarEmpleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btEliminarEmpleado"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvDatosPersonales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="------Datos personales------"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/tvDatosLaborales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="------Datos Laborales------"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="411dp"
+        android:layout_height="179dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tvDatosLaborales"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatosPersonales"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/tvFichaNombre"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F6F1F1"
+            android:backgroundTint="@color/color_de_fondo"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvFichaApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#F6F5F5"
+            android:backgroundTint="@color/color_de_fondo"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvFichaDni"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_de_fondo"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvFichaTlf"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_de_fondo"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvFichaEmail"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_de_fondo"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="408dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btEliminarEmpleado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDatosLaborales"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/tvFichaPuesto"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_de_fondo"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvFichaHorario"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_de_fondo"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvFichaFechaalta"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_de_fondo"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/tvFichaSalario"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@color/color_de_fondo"
+            android:text="TextView" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

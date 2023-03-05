@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    style="@android:style/Widget.ScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:nestedScrollingEnabled="true"
+    android:nextFocusDown="@id/nombreEditText"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_de_fondo"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/nombreEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            app:layout_constraintBottom_toTopOf="@+id/apellidosEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/apellidosEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Apellidos"
+            app:layout_constraintBottom_toTopOf="@+id/dniEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombreEditText" />
+
+        <EditText
+            android:id="@+id/dniEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="DNI"
+            app:layout_constraintBottom_toTopOf="@+id/telefonoEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apellidosEditText" />
+
+        <EditText
+            android:id="@+id/telefonoEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dniEditText" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Correo electrónico"
+            app:layout_constraintBottom_toTopOf="@+id/puestoEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/telefonoEditText" />
+
+        <EditText
+            android:id="@+id/puestoEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Puesto de trabajo"
+            app:layout_constraintBottom_toTopOf="@+id/horarioEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+        <EditText
+            android:id="@+id/horarioEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Horario de trabajo"
+            app:layout_constraintBottom_toTopOf="@+id/antiguedadEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/puestoEditText" />
+
+        <EditText
+            android:id="@+id/antiguedadEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Antigüedad"
+            app:layout_constraintBottom_toTopOf="@+id/salarioEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horarioEditText" />
+
+        <EditText
+            android:id="@+id/salarioEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Salario"
+            android:scrollHorizontally="false"
+            app:layout_constraintBottom_toTopOf="@+id/guardarButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/antiguedadEditText" />
+
+        <Button
+            android:id="@+id/guardarButton"
+            android:layout_width="211dp"
+            android:layout_height="53dp"
+            android:text="Guardar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/salarioEditText" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            app:layout_constraintGuide_end="391dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
